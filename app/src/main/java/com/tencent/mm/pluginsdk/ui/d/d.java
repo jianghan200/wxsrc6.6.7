@@ -1,0 +1,28 @@
+package com.tencent.mm.pluginsdk.ui.d;
+
+import android.text.SpannableString;
+
+public abstract interface d
+{
+  public abstract SpannableString g(CharSequence paramCharSequence, int paramInt);
+  
+  public abstract boolean u(CharSequence paramCharSequence);
+  
+  public abstract boolean v(CharSequence paramCharSequence);
+  
+  public static final class a
+  {
+    protected static d qPH;
+    
+    public static final void a(d paramd)
+    {
+      qPH = paramd;
+    }
+  }
+}
+
+
+/* Location:              /Users/Han/Desktop/wxall/微信反编译/反编译 6.6.7/dex2jar-2.0/classes-dex2jar.jar!/com/tencent/mm/pluginsdk/ui/d/d.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

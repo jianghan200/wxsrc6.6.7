@@ -1,0 +1,123 @@
+package com.tencent.mm.plugin.game.d;
+
+import com.tencent.mm.protocal.c.bhd;
+import com.tencent.mm.protocal.c.fk;
+import java.util.LinkedList;
+
+public final class at
+  extends bhd
+{
+  public String jPc;
+  public int jRa;
+  public int jRb;
+  public int jRc;
+  public String jRd;
+  public String jRe;
+  
+  protected final int a(int paramInt, Object... paramVarArgs)
+  {
+    if (paramInt == 0)
+    {
+      paramVarArgs = (f.a.a.c.a)paramVarArgs[0];
+      if (this.shX != null)
+      {
+        paramVarArgs.fV(1, this.shX.boi());
+        this.shX.a(paramVarArgs);
+      }
+      if (this.jPc != null) {
+        paramVarArgs.g(2, this.jPc);
+      }
+      paramVarArgs.fT(3, this.jRa);
+      paramVarArgs.fT(4, this.jRb);
+      paramVarArgs.fT(5, this.jRc);
+      if (this.jRd != null) {
+        paramVarArgs.g(6, this.jRd);
+      }
+      if (this.jRe != null) {
+        paramVarArgs.g(7, this.jRe);
+      }
+      return 0;
+    }
+    if (paramInt == 1) {
+      if (this.shX == null) {
+        break label555;
+      }
+    }
+    label555:
+    for (paramInt = f.a.a.a.fS(1, this.shX.boi()) + 0;; paramInt = 0)
+    {
+      int i = paramInt;
+      if (this.jPc != null) {
+        i = paramInt + f.a.a.b.b.a.h(2, this.jPc);
+      }
+      i = i + f.a.a.a.fQ(3, this.jRa) + f.a.a.a.fQ(4, this.jRb) + f.a.a.a.fQ(5, this.jRc);
+      paramInt = i;
+      if (this.jRd != null) {
+        paramInt = i + f.a.a.b.b.a.h(6, this.jRd);
+      }
+      i = paramInt;
+      if (this.jRe != null) {
+        i = paramInt + f.a.a.b.b.a.h(7, this.jRe);
+      }
+      return i;
+      if (paramInt == 2)
+      {
+        paramVarArgs = new f.a.a.a.a((byte[])paramVarArgs[0], unknownTagHandler);
+        for (paramInt = bhd.a(paramVarArgs); paramInt > 0; paramInt = bhd.a(paramVarArgs)) {
+          if (!super.a(paramVarArgs, this, paramInt)) {
+            paramVarArgs.cJS();
+          }
+        }
+        break;
+      }
+      if (paramInt == 3)
+      {
+        Object localObject1 = (f.a.a.a.a)paramVarArgs[0];
+        at localat = (at)paramVarArgs[1];
+        paramInt = ((Integer)paramVarArgs[2]).intValue();
+        switch (paramInt)
+        {
+        default: 
+          return -1;
+        case 1: 
+          paramVarArgs = ((f.a.a.a.a)localObject1).IC(paramInt);
+          i = paramVarArgs.size();
+          paramInt = 0;
+          while (paramInt < i)
+          {
+            Object localObject2 = (byte[])paramVarArgs.get(paramInt);
+            localObject1 = new fk();
+            localObject2 = new f.a.a.a.a((byte[])localObject2, unknownTagHandler);
+            for (boolean bool = true; bool; bool = ((fk)localObject1).a((f.a.a.a.a)localObject2, (com.tencent.mm.bk.a)localObject1, bhd.a((f.a.a.a.a)localObject2))) {}
+            localat.shX = ((fk)localObject1);
+            paramInt += 1;
+          }
+        case 2: 
+          localat.jPc = ((f.a.a.a.a)localObject1).vHC.readString();
+          return 0;
+        case 3: 
+          localat.jRa = ((f.a.a.a.a)localObject1).vHC.rY();
+          return 0;
+        case 4: 
+          localat.jRb = ((f.a.a.a.a)localObject1).vHC.rY();
+          return 0;
+        case 5: 
+          localat.jRc = ((f.a.a.a.a)localObject1).vHC.rY();
+          return 0;
+        case 6: 
+          localat.jRd = ((f.a.a.a.a)localObject1).vHC.readString();
+          return 0;
+        }
+        localat.jRe = ((f.a.a.a.a)localObject1).vHC.readString();
+        return 0;
+      }
+      return -1;
+    }
+  }
+}
+
+
+/* Location:              /Users/Han/Desktop/wxall/微信反编译/反编译 6.6.7/dex2jar-2.0/classes3-dex2jar.jar!/com/tencent/mm/plugin/game/d/at.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */
